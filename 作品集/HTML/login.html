@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/login.css">
+</head>
+
+<body>
+    <div class="login-bg">
+        <div class="login-inner">
+            <div class="login-box">
+                <form class="login" action="javascript:;" method="post">
+                    <div id="right" class="two-thirds">
+                        <fieldset>
+                            <h1 class="lgd">登入</h1>
+                            <input type="username" id="username" class="username_email" name="username"
+                                placeholder="使用者名稱" required>
+                            <input type="password" id="password" class="password1" name="password" placeholder="您的密碼"
+                                required>
+                            <input type="button" value="登入" class="btn" id="submit" onclick="myFormCheck()" />
+
+                            <div id="forget-psw">
+                                <a href="javascript:;" id="forgetpsw">忘記密碼?</a>
+                            </div>
+                            <div id="sign">
+                                <span>還不是會員?</span>
+                                <a href="/HTML/signup.html" id="register">註冊</a>
+                            </div>
+                            <div class="back-index">
+                                <a href="/HTML/homepage.html">回到首頁</a>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        password.onblur = function () {
+            var password = document.getElementById("password"); 
+            var username = document.getElementById("username"); 
+            if (password.value.length < 6 || password.value.length > 16) { alert("你输入的密碼長度不符合要求") }
+            else if (password.value == "abc123" && username.value == "abc") { alert("登入成功") }
+            else if (username.value != "abc") { alert("使用者名稱錯誤") }
+            else { alert("密碼錯誤") }
+        }
+    </script>
+
+</body>
+
+</html>

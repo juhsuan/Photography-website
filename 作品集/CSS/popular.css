@@ -1,0 +1,76 @@
+/* logo */
+nav>div>a>img {
+    width: 100px;
+}
+.nav-item>a {
+    position: relative;
+    text-decoration: none;
+}
+.nav-item>a::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0px;
+    border-bottom: 1px solid gray;
+    transition: .3s;
+}
+.nav-item a:hover::after {
+  right: 15%;
+  left: 15%;
+}
+
+/* inner title */
+/* 標題 */
+.title {
+    background-color: rgba(234, 233, 231, 0.814);
+    grid-area: title;
+    margin-bottom: 12px 0px;
+    padding: 20px 0px 20px 65px;
+}
+
+/* 標題樣式 */
+.title h2 {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Times New Roman', serif;
+
+}
+
+.title>span {
+    font-size: 18px;
+    color: gray;
+    padding-left: 3px;
+}
+
+/* 圖片文字 */
+.image-title {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+a:hover .image-title {
+    opacity: 1;
+}
+
+
+.footer-inner-text{
+    margin: 1.5vh;
+    flex: 6;
+}
+.footer-inner-text span {
+    float: right;
+    color: gray;
+    padding-right: 50px;
+}
+.footer-inner-text span:nth-child(1) {
+    padding-right:30px ;
+}

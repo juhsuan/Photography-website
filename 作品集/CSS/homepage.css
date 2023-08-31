@@ -1,0 +1,141 @@
+/* RWD */
+/* Extra large devices */
+@media (min-width: 1200px) {
+    .banner {
+        width: 100%;
+        height: 91.5vh;
+        background: linear-gradient(115deg, rgb(237, 237, 236) 48%, transparent 45%) center center / 100% 100%,
+            url("../img/DSCF2860.JPG") right center / auto 100%;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+/* desktops */
+@media (min-width: 1024px) {
+    .banner {
+        width: 100%;
+        /* height: 91.5vh; */
+        background: linear-gradient(115deg, rgb(237, 237, 236) 48%, transparent 45%) center center / 100% 100%,
+            url("../img/DSCF2860.JPG") right center / auto 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .banner-text span {
+        color: black;
+        font-size: 4vw;
+    }
+}
+
+/* tablets */
+@media (max-width: 1024px) {
+    .banner {
+        width: 100%;
+        height: 91.5vh;
+        background: linear-gradient(115deg, rgba(255, 255, 255, 0) 0%, transparent 100%) center center / 100% 100%,
+            url("../img/DSCF2860.JPG") right center / auto 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .banner-text span {
+        color: white;
+        font-size: 7vw;
+    }
+
+    .banner-text span:nth-child(2) {
+        font-size: 4vw;
+    }
+
+    .banner-text p {
+        color: white;
+        font-size: 2vw;
+    }
+}
+
+/* phones */
+@media (max-width: 576px) {
+    .banner {
+        background-image: url(../img/DSCF2860.JPG);
+        object-fit: fill;
+    }
+
+    .banner-text {
+        color: white;
+        height: auto;
+    }
+
+    .banner-text h1 {
+        font-size: medium;
+        color: brown;
+    }
+}
+
+/* logo */
+nav>div>a>img {
+    width: 100px;
+}
+
+/* 首頁背景圖 */
+.container {
+    height: 100%;
+}
+
+.banner-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-text h1 {
+    font-size: 60px;
+    height: 10vh;
+
+}
+
+.banner-text h3 {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+footer.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-inner-text {
+    margin: 1.5vh;
+    flex: 6;
+}
+
+.footer-inner-text span {
+    float: right;
+    color: gray;
+    padding-right: 50px;
+}
+
+.footer-inner-text span:nth-child(1) {
+    padding-right: 30px;
+}
+
+
+.nav-item>a {
+    position: relative;
+    text-decoration: none;
+}
+.nav-item>a::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0px;
+    border-bottom: 1px solid gray;
+    transition: .3s;
+}
+.nav-item a:hover::after {
+  right: 15%;
+  left: 15%;
+}

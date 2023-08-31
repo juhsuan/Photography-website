@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/popular.css">
+    <link rel="stylesheet" href="../CSS/justifiedGallery.min.css" />
+    <title>Popular</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/HTML/homepage.html">
+                <img  src="../img/julogo1.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./popular.html">Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./column.html">Column</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex">
+                <a class="btn btn-light" href="/HTML/login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- inner-title -->
+    <div class="title" class="container">
+        <h2>What's popular today</h2>
+        <span>See recently added photos with the highest Pulse.</span>
+    </div>
+    <!-- popular photo -->
+    <div id="mygallery">
+        <a href="../img/DSC01354.jpg">
+            <img src="../img/DSC01354.jpg"/>
+            <div class="image-title">Image 1 Title</div>
+        </a>
+        <a href="../img/DSC01330.jpg">
+            <img src="../img/DSC01330.jpg"/>
+            <div class="image-title">Image 2 Title</div>
+        </a>
+        <a href="../img/DSC02608.jpg">
+            <img src="../img/DSC02608.jpg"/>
+            <div class="image-title">Image 3 Title</div>
+        </a>
+        <a href="../img/DSC02848.jpg">
+            <img src="../img/DSC02848.jpg"/>
+            <div class="image-title">Image 4 Title</div>
+        </a>
+        <a href="../img/DSC01331.jpg">
+            <img src="../img/DSC01331.jpg"/>
+            <div class="image-title">Image 5 Title</div>
+        </a>
+        <a href="../img/DSC02629.jpg">
+            <img src="../img/DSC02629.jpg"/>
+            <div class="image-title">Image 6 Title</div>
+        </a>
+        <a href="../img/DSC02710.jpg">
+            <img src="../img/DSC02710.jpg"/>
+            <div class="image-title">Image 7 Title</div>
+        </a>
+        <a href="../img/DSC00812.jpg">
+            <img src="../img/DSC00812.jpg"/>
+            <div class="image-title">Image 8 Title</div>
+        </a>
+        <a href="../img/DSC01350.jpg">
+            <img src="../img/DSC01350.jpg"/>
+            <div class="image-title">Image 9 Title</div>
+        </a>
+        <a href="../img/DSC02268.jpg">
+            <img src="../img/DSC02268.jpg"/>
+            <div class="image-title">Image 10 Title</div>
+        </a>
+        <a href="../img/DSCF3926.JPG">
+            <img src="../img/DSCF3926.JPG"/>
+            <div class="image-title">Image 11 Title</div>
+        </a>
+        <a href="../img/DSCF3288.jpg">
+            <img src="../img/DSCF3288.jpg"/>
+            <div class="image-title">Image 12 Title</div>
+        </a>
+        <a href="../img/DSCF2367.jpg">
+            <img src="../img/DSCF2367.jpg"/>
+            <div class="image-title">Image 13 Title</div>
+        </a>
+        
+    </div>
+    <footer class="footer mt-auto py-2 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">
+                <div class="footer-inner-text">
+                    <span>About</span>
+                    <span>Contact</span>
+                    <span>Support</span>
+                    <span>Privacy</span>
+                    <span>Terms</span>
+                </div>
+                &copy; 2023 Juun Company.</span>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../JS/jquery.justifiedGallery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#mygallery').justifiedGallery({
+                rowHeight: 300,
+                margins: 8,
+                lastRow: 'justify',
+                captions: false,
+                randomize: false
+            });
+        });
+    </script>
+
+</body>
+</html>

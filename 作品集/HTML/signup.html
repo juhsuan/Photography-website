@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/signup.css">
+    <link rel="stylesheet" href="/js/check.js">
+    <style>
+        span {
+            color: #FF0000;
+            font-size: 12px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-bg">
+        <div class="login-inner">
+            <div class="login-box">
+                <form class="signup" action="">
+                    <span class="title">會員註冊</span>
+                    <div>
+                        <fieldset>
+                            <!-- Username -->
+                            <label for="">使用者名稱:</label>
+                            <input type="text" name="" id="username" class="inputText" placeholder="請輸入英文字母至少3位"
+                            onfocus="userNameonfocu()" onblur="userNameonblus()">
+                            <span id="userNameerror">
+                            </span>
+                            <br>
+                            <!-- password -->
+                            <label for="">密碼:</label>
+                            <input type="password" name="" id="password" class="inputText" placeholder="請設定6-12位英數字混合密碼"
+                                onfocus="pwdonfocu()" onblur="pwdonblus()">
+                            <span id="pwderror">
+                            </span>
+                            <br>
+                            <!-- Confirm pwd -->
+                            <label for="">確認密碼:</label>
+                            <input type="password" name="" id="confirmPassword" class="inputText" placeholder="請再一次輸入密碼"
+                                onfocus="cpwdonfocu()" onblur="cpwdonblus()">
+                            <span id="cpwderror">
+                            </span>
+                            <br>
+                            <!-- Email -->
+                            <label for="">電子郵件:</label>
+                            <input type="text" name="" id="email" class="inputText" placeholder="請輸入電子郵件"
+                                onfocus="emailonfocu()" onblur="emailonblus()">
+                            <span id="emailerror">
+                            </span>
+                            <br>
+                            <!-- Phone -->
+                            <label for="">行動電話:</label>
+                            <input type="number" name="" id="phone" class="inputText" placeholder="請輸入行動電話"
+                                onfocus="phoneonfocu()" onblur="phoneonblus()"><br>
+                            <span id="phoneerror">
+                            </span>
+                            <input type="button" value="註冊" class="btn" id="submit" onclick="myFormCheck()" />
+                        </fieldset>
+                        <div id="sign">
+                            <span>已經是會員?</span>
+                            <a href="/HTML/login.html" id="register">登入</a>
+                        </div>
+                        <div class="back-index">
+                            <span>
+                                <a href="/HTML/homepage.html">回到首頁</a>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/JS/signup.js"></script>
+
+
+    </div>
+
+</body>
+
+</html>

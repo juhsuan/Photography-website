@@ -1,0 +1,75 @@
+/* logo */
+nav>div>a>img{
+    width: 100px;
+}
+.nav-item>a {
+    position: relative;
+    text-decoration: none;
+}
+.nav-item>a::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0px;
+    border-bottom: 1px solid gray;
+    transition: .3s;
+}
+.nav-item a:hover::after {
+  right: 15%;
+  left: 15%;
+}
+
+/* 圖片 */
+.column-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 10px;
+}
+.column-section {
+    padding-top: 45px;
+    background-color: rgba(236, 235, 233, 0.673);
+}
+
+/* 1-1 */
+.column-section1, 
+.column-section2, 
+.column-section3,
+.column-section4,
+.column-section5,
+.column-section6,
+.column-section7 {
+    background-color: white;
+    border: 1px solid lightgray;
+}
+/* 1-1標題 */
+.column-section1 a{
+    text-decoration: none;
+}
+.column-section1-title {
+    color: black;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+/* icon */
+.column-section-icon>span {
+    color: gray;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+/* hover圖片變深 */
+.column-section2 img:hover {
+    filter: brightness(.8);
+    cursor: pointer;
+    opacity: 90%;
+}
+
+.column-section1 img:hover {
+    filter: brightness(.8);
+    cursor: pointer;
+    opacity: 90%;
+}
